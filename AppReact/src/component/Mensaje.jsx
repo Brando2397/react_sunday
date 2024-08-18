@@ -1,6 +1,6 @@
 function Mensaje(){
 
-    return <h1>Hola soy Jesús Canales</h1>
+    return <h1>Hola soy Brando Inga</h1>
 
 }
 
