@@ -90,3 +90,15 @@ body{
   background-color: purple;
   color:white;
 }
+
+.banner{
+
+  height:45%;
+  width:100%
+}
+
+.carrucel{
+
+  height: 100%;
+  width: 100%;
+}
