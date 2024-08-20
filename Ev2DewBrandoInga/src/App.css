@@ -2,12 +2,77 @@ body{
   background-color: white;
 }
 
-.menuBar{
+#root{
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.cabecera{
+  padding: 0px;
+  margin:0px;
+  width:100%;
+  height: 25%;
   display: flex;
-  width: 75vw;
   justify-content: space-around;
-  Height: 50px;
-  position: absolute;
+  box-sizing: border-box;
+}
+
+/*Creacion de cabecera, la parte de la izq*/
+
+.cabecera_izq{
+
+  width:30%;
+  height: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.imgLogo{
+
+  padding:3%;
+  width:80%;
+  height: 80%;
+  box-sizing: border-box;
+}
+
+.cabecera_der{
+
+  width: 70%;
+  height: 100%;
+  border: 1px solid black;
+  padding: 3% 0;
+  box-sizing: border-box;
+
+}
+
+
+.BarraBusqueda{
+
+  display: block;
+  margin-left: 70%;
+  margin-bottom: 1%;
+  border-radius: 20px;
+  width: 20%;
+  height: 40%;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.imgBusqueda{
+
+  height: 90%;  
+  border-radius: 30px;
+}
+
+
+.menuBar{
+  margin-top: 2%;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between;
+  Height: 55%;
   
 }
 

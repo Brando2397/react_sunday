@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import logo from './imagenes/TodoTurismo.jpg';
+import lupa from './imagenes/Lupa.png';
 
 function ImgLogo(){
 
@@ -9,6 +10,19 @@ function ImgLogo(){
         </>
     )
 }
+
+function BarraBusqueda(){
+
+    return(
+        <>
+        <div className="BarraBusqueda">
+            <img className="imgBusqueda" src={lupa} alt="lupa"></img>
+        </div>
+        </>
+    )
+}
+
+
 
 function Menu(){
 
@@ -27,18 +41,25 @@ function Menu(){
 
 }
 
-function Cabecera(){
+function Nav(){
 
     return(
 
         <>
-        <div>
-            <imgLogo></imgLogo>
-            <Menu></Menu>
+        <div className="cabecera">
+            <div className="cabecera_izq">
+                <ImgLogo></ImgLogo>
+            </div>
+            
+            <div className="cabecera_der">
+                <BarraBusqueda></BarraBusqueda>
+                <Menu></Menu>
+            </div>
+            
         </div>
         
         </>
     )
 }
 
-export default Cabecera;
+export default Nav;

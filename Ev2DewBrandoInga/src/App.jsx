@@ -1,12 +1,12 @@
 import { Fragment } from 'react';
 import './App.css'
-import Cabecera from './Menu.jsx'
+import Nav from './Nav.jsx'
 
 function App() {
 
   return (
     <>
-      <Cabecera/>
+      <Nav/>
     </>
   )
 }
