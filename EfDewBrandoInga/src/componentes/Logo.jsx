@@ -19,9 +19,14 @@ function LogoEfecto(){
     return(
         
         <>
+
+            <div   className='Logo_contenedor'
+               onMouseOver={imgHover} 
+               onMouseLeave={imgNotHover}
+            >
+                
             <img  alt='Logo' src={LogoPizza} className='Logo'
-            onMouseOver={imgHover} 
-            onMouseLeave={imgNotHover}
+         
             style={{transform: efecto? "rotate(360deg)": "rotate(0deg)",
                 transition: 'transform 0.8s'
             }}
@@ -29,17 +34,18 @@ function LogoEfecto(){
             />
 
             <img  alt='Logo' src={Logo} className='Logo'
-            onMouseOver={imgHover} 
-            onMouseLeave={imgNotHover}
             style={{left: efecto? "30px": "0px",
                 transition: 'left 0.5s'
             }}
-            
+
             />
-        
+
+            </div>
+            
+           
         </>
-    )
+    );
 
 }
 
-export default LogoEfecto
+export default LogoEfecto;
