@@ -1,6 +1,7 @@
 import React from "react";
 import  { Fragment, useState } from 'react'
-import Logo from '../imagenes/logo.jpg'
+import Logo from '../imagenes/logoLetra.png'
+import LogoPizza from '../imagenes/logoPizza.png'
 
 function LogoEfecto(){
 
@@ -18,12 +19,23 @@ function LogoEfecto(){
     return(
         
         <>
+            <img  alt='Logo' src={LogoPizza} className='Logo'
+            onMouseOver={imgHover} 
+            onMouseLeave={imgNotHover}
+            style={{transform: efecto? "rotate(360deg)": "rotate(0deg)",
+                transition: 'transform 0.8s'
+            }}
+            
+            />
+
             <img  alt='Logo' src={Logo} className='Logo'
             onMouseOver={imgHover} 
             onMouseLeave={imgNotHover}
-            style={{transform: efecto? "rotate(180deg)": "rotate(0deg)" }}
+            style={{left: efecto? "30px": "0px",
+                transition: 'left 0.5s'
+            }}
+            
             />
-
         
         </>
     )

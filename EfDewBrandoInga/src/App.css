@@ -18,5 +18,22 @@ body{
 
   width: auto;
   height: 90%;
+  position: relative;
   
+}
+
+
+.FechaHora{
+
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+}
+
+.Fecha{
+  
+  width: 30%;
+  height: 70%;
+  background-color: red;
+
 }
