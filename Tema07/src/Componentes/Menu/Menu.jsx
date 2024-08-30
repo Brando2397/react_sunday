@@ -4,7 +4,7 @@ import './Menu.css'
 
 function Menu(){
 
-    const nombresItems = ['Inicio', 'Tradicion', 'Gastronomia', 'Plato Bandera']
+    const nombresItems = ['Inicio', 'Artistas', 'Mis top 10', 'Mis top Videos']
 
     const itemsBarNav = nombresItems.map((item,index) => 
     
