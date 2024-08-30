@@ -1,0 +1,30 @@
+.barraNav{
+
+    width: 100vw;
+    height: 10vh;
+    color:black;
+    background-color: white;
+}
+
+ul{
+
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.itemLista{
+
+    list-style: none;
+    border-bottom: 1px solid black;
+    display: block;
+    width: 15%;
+    text-align: center;
+    height: 30%;
+    border-radius: 10px;
+    a {
+        color: black;
+    }
+}
